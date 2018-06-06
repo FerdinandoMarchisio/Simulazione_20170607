@@ -45,9 +45,9 @@ public class SerieAController {
     		// o una serie di stringhe  Squadra / punteggio
     		
     		String stampa = model.stampaClassifica();
- //   		String stampa = model.stampaClassifica2();
+    		String stampa2 = model.stampaClassifica2();
     		
-    		txtResult.setText(stampa);
+    		txtResult.setText(stampa+"\n*-*-*\n"+stampa2);
     	}
     }
 

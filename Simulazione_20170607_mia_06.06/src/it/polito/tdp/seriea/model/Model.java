@@ -74,22 +74,14 @@ public class Model {
 		this.generaClassifica();
 		// a questo punto dovrei aver caricato completamente il grafo
 		// genero la classifica
-		
-		//provo una stampa
-//		System.out.println("*-*-*-*");
-//		System.out.println(graph.vertexSet());
-//		System.out.println(graph.edgeSet());
+	
 		
 	}
 
 	public void generaClassifica() {
-		// TODO Auto-generated method stub
-		
-			int i=0;
+			
 			for(DefaultWeightedEdge e:graph.edgeSet()) {
 				
-				if(i<50)
-				i++;
 				if(graph.getEdgeWeight(e)>0.0) {
 					//Squadra di casa vince
 					trovaSquadra(graph.getEdgeSource(e)).vince();
